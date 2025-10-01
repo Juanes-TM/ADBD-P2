@@ -45,5 +45,9 @@
   - **Unidades compradas:** Unidades de un medicamento que un cliente compra. INTEGER, ejemplo: 3 (Un cliente compró 3 unidades de "Paracetamol").
   - **Fecha de compra:** Fecha en la que un medicamento es comprado por un cliente. DATE, ejemplo: 2025-09-25 (Un cliente compró 3 unidades de "Paracetamol" el 25/09/2025).
   - **Fecha de pago:** Fecha de pago de un medicamento comprado por un cliente con crédito. Date, ejemplo: 2025-09-20 (Un cliente con crédito pagó 3 unidades de "Paracetamol" el 20/09/2025).
-   
+
+### Restricciones semánticas:
+
+- Dos medicamentos pueden sustituirse si son de la misma familia y fueron fabricados en distintos laboratorios.
+- En la relacion **Compra**, el atributo **Fecha de pago** solo se aplica si el cliente tiene crédito.
 
